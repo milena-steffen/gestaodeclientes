@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestão de Clientes</title>
+</head>
+<header>
+    <div class="cadastro">
+        <h1 class="tituloprincipal">Gestão de Clientes</h1>
+    </div>    
+</header>
+
+<main>
+    <form id="cadastrodocliente">
+        <div class="dados">
+            <input class="nome" type="text" id="nome" placeholder="Nome" required>
+            <input class="telefone" type="tel" id="telefone" placeholder="Telefone" required>
+            <input class="email" type="email" id="email" placeholder="Email" required>
+            <button class="botao" type="submit" id="cadastrodocliente">Adicionar</button>
+        </div>
+    </form>
+
+    <div class="filtrotabela">
+        <input type="text" id="filtro" placeholder="Filtrar clientes">
+    </div>
+
+    <table id="listadeclientes">
+        <thead class="dadosdalista">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+            
+        </thead>
+        <tbody id="dadosclientes">
+            <td class="hidden-cell"></td>
+        </tbody>
+    </table>
+</main>
+
+<script src="script.js"></script>
+</html>
